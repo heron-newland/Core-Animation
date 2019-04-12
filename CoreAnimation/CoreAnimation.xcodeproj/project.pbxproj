@@ -18,6 +18,7 @@
 		5B399F5A1F1C5E24004D21FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B399F581F1C5E24004D21FA /* Main.storyboard */; };
 		5B399F5C1F1C5E24004D21FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B399F5B1F1C5E24004D21FA /* Assets.xcassets */; };
 		5B399F5F1F1C5E24004D21FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B399F5D1F1C5E24004D21FA /* LaunchScreen.storyboard */; };
+		5B599296226085AC00A38C12 /* HLLTransitoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B599295226085AC00A38C12 /* HLLTransitoonViewController.swift */; };
 		5B99A98A1F1F074600E73F0A /* HLLCATransformLayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99A9891F1F074600E73F0A /* HLLCATransformLayerController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		5B399F5B1F1C5E24004D21FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B399F5E1F1C5E24004D21FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B399F601F1C5E24004D21FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B599295226085AC00A38C12 /* HLLTransitoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLLTransitoonViewController.swift; sourceTree = "<group>"; };
 		5B99A9891F1F074600E73F0A /* HLLCATransformLayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLLCATransformLayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				5B0A55431F1E02B30013D138 /* HLLCAEmitterLayerController.swift */,
 				5B1632361F1EE0A600A2D510 /* HLLCAReplicatorLayerController.swift */,
 				5B99A9891F1F074600E73F0A /* HLLCATransformLayerController.swift */,
+				5B599295226085AC00A38C12 /* HLLTransitoonViewController.swift */,
 				5B0A553B1F1D95320013D138 /* HLLShapeLayerView.swift */,
 				5B399F581F1C5E24004D21FA /* Main.storyboard */,
 				5B0A553F1F1DE4170013D138 /* Category.swift */,
@@ -161,6 +164,7 @@
 				5B1632371F1EE0A600A2D510 /* HLLCAReplicatorLayerController.swift in Sources */,
 				5B99A98A1F1F074600E73F0A /* HLLCATransformLayerController.swift in Sources */,
 				5B0A55441F1E02B30013D138 /* HLLCAEmitterLayerController.swift in Sources */,
+				5B599296226085AC00A38C12 /* HLLTransitoonViewController.swift in Sources */,
 				5B0A55401F1DE4170013D138 /* Category.swift in Sources */,
 				5B0A55421F1DEFA90013D138 /* HLLCAGradientLayerController.swift in Sources */,
 				5B399F551F1C5E24004D21FA /* AppDelegate.swift in Sources */,

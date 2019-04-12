@@ -20,7 +20,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             "CAGradientLayer",
             "CAEmitterLayer",
             "CAReplicatorLayer",
-            "CATransformLayer"
+            "CATransformLayer",
+            "CATransition"
         ]
     }()
     
@@ -52,6 +53,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             destinationViewController = HLLCAReplicatorLayerController()
         }else if indexPath.row == 4{
             destinationViewController = HLLCATransformLayerController()
+        }else if indexPath.row == 5{
+            destinationViewController = HLLTransitoonViewController()
         }
         
         destinationViewController?.navigationItem.title = data[indexPath.row]
