@@ -11,7 +11,7 @@ import UIKit
 class HLLCATransformLayerController: UIViewController {
 
     lazy var slide: UISlider = {
-        let sli = UISlider(frame: CGRect(x: 10, y: 80, width: UIScreen.main.bounds.width - 20, height: 30))
+        let sli = UISlider(frame: CGRect(x: 10, y: 100, width: UIScreen.main.bounds.width - 20, height: 30))
         sli.tintColor = UIColor.green
         sli.thumbTintColor = UIColor.blue
         sli.minimumValue = -0.011
@@ -41,7 +41,7 @@ class HLLCATransformLayerController: UIViewController {
         view.backgroundColor = UIColor.white
         view.addSubview(slide)
         
-//        basicUsage()
+        basicUsage()
         generateCubic()
     }
 
@@ -69,7 +69,7 @@ class HLLCATransformLayerController: UIViewController {
         var transform = CATransform3DIdentity
        
         cubic.bounds = view.bounds
-        cubic.position = view.center
+        cubic.position = CGPoint(x: view.center.x, y: view.center.y + 120)
         cubic.transform = transform
         view.layer.addSublayer(cubic)
         
@@ -109,7 +109,7 @@ class HLLCATransformLayerController: UIViewController {
     func surface(With color: UIColor) -> CALayer {
         let font = CALayer()
         font.bounds = CGRect(x: 0, y: 0, width: cubicWidth, height: cubicWidth)
-        font.position = view.center
+        font.position = CGPoint(x: view.center.x, y: view.center.y + 120)
         font.backgroundColor = color.cgColor
         return font
     }
@@ -122,7 +122,7 @@ class HLLCATransformLayerController: UIViewController {
         slide.isHidden = false
         
         contianer.bounds = CGRect(x: 0, y: 0, width: 200, height: 200)
-        contianer.position = view.center
+        contianer.position = CGPoint(x: view.center.x, y: view.center.y - 100)
         var transform = CATransform3DIdentity
         //contianer图层的transform会应用到所有子视图中, 能统一容器中所有子视图的transform效果,统一容器中透视效果一直, 有利于保持画面逼真的效果
         transform.m34 = -1.0 / 500

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5B0A553A1F1D8DD50013D138 /* HLLShapeLayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A55391F1D8DD50013D138 /* HLLShapeLayerController.swift */; };
-		5B0A553C1F1D95320013D138 /* HLLShapeLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A553B1F1D95320013D138 /* HLLShapeLayerView.swift */; };
 		5B0A55401F1DE4170013D138 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A553F1F1DE4170013D138 /* Category.swift */; };
 		5B0A55421F1DEFA90013D138 /* HLLCAGradientLayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A55411F1DEFA90013D138 /* HLLCAGradientLayerController.swift */; };
 		5B0A55441F1E02B30013D138 /* HLLCAEmitterLayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0A55431F1E02B30013D138 /* HLLCAEmitterLayerController.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		5B0A55391F1D8DD50013D138 /* HLLShapeLayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLLShapeLayerController.swift; sourceTree = "<group>"; };
-		5B0A553B1F1D95320013D138 /* HLLShapeLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLLShapeLayerView.swift; sourceTree = "<group>"; };
 		5B0A553F1F1DE4170013D138 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5B0A55411F1DEFA90013D138 /* HLLCAGradientLayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLLCAGradientLayerController.swift; sourceTree = "<group>"; };
 		5B0A55431F1E02B30013D138 /* HLLCAEmitterLayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLLCAEmitterLayerController.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 				5B1632361F1EE0A600A2D510 /* HLLCAReplicatorLayerController.swift */,
 				5B99A9891F1F074600E73F0A /* HLLCATransformLayerController.swift */,
 				5B599295226085AC00A38C12 /* HLLTransitoonViewController.swift */,
-				5B0A553B1F1D95320013D138 /* HLLShapeLayerView.swift */,
 				5B399F581F1C5E24004D21FA /* Main.storyboard */,
 				5B0A553F1F1DE4170013D138 /* Category.swift */,
 				5B399F5B1F1C5E24004D21FA /* Assets.xcassets */,
@@ -115,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = boc;
 				TargetAttributes = {
 					5B399F501F1C5E24004D21FA = {
@@ -129,6 +126,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -169,7 +167,6 @@
 				5B0A55421F1DEFA90013D138 /* HLLCAGradientLayerController.swift in Sources */,
 				5B399F551F1C5E24004D21FA /* AppDelegate.swift in Sources */,
 				5B0A553A1F1D8DD50013D138 /* HLLShapeLayerController.swift in Sources */,
-				5B0A553C1F1D95320013D138 /* HLLShapeLayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,20 +196,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -248,20 +254,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,7 +309,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bocop.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -306,7 +321,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bocop.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

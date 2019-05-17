@@ -16,7 +16,7 @@ class HLLCAReplicatorLayerController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
         
-//        basicUsage()
+        basicUsage()
        
         rotateCircle()
         
@@ -38,7 +38,7 @@ class HLLCAReplicatorLayerController: UIViewController {
     func rotateCircle() {
         let replicator = CAReplicatorLayer()
         replicator.bounds = view.bounds
-        replicator.position = view.center
+        replicator.position = CGPoint(x: view.center.x, y: view.center.y - 100)
         replicator.instanceCount = 12
         replicator.instanceDelay = 0.4
         replicator.preservesDepth = true
@@ -88,7 +88,7 @@ class HLLCAReplicatorLayerController: UIViewController {
         //创建CAReplicatorLayer
         let replicatorLayer = CAReplicatorLayer()
         replicatorLayer.bounds = view.bounds
-        replicatorLayer.position = view.center
+        replicatorLayer.position = CGPoint(x: view.center.x, y: view.center.y + 100)
         replicatorLayer.backgroundColor = UIColor.yellow.cgColor
         view.layer.addSublayer(replicatorLayer)
         replicatorLayer.instanceCount = 8

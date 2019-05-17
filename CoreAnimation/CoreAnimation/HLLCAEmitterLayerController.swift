@@ -54,7 +54,7 @@ class HLLCAEmitterLayerController: UIViewController {
         rainCell.xAcceleration = 20
         rainCell.zAcceleration = 60
         
-        rainCell.color = UIColor.white.cgColor
+        rainCell.color = UIColor.red.cgColor
         rainCell.contents = UIImage(named: "more_dot")?.cgImage
         return [rainCell]
     }

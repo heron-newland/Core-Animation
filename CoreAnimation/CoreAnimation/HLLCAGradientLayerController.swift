@@ -48,7 +48,7 @@ class HLLCAGradientLayerController: UIViewController {
         view.addSubview(progressView)
         view.addSubview(slider)
         view.addSubview(des)
-//        circleLayer()
+        circleLayer()
         liner()
 //        basicUsage()
     }
@@ -116,6 +116,7 @@ class HLLCAGradientLayerController: UIViewController {
     progressView.setProgress(slider.value, animated: true)
         shapeLayer.strokeEnd = CGFloat(slider.value)
           lineLayer.strokeEnd = CGFloat(slider.value)
+    
         des.text = "\(slider.value)"
         
     }

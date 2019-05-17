@@ -214,8 +214,8 @@ class HLLShapeLayerController: UIViewController {
             shapeLayer.lineDashPhase = shapeLayer.lineDashPhase - 3
         }
         let runlop = RunLoop.current
-        runlop.add(timer, forMode: .commonModes)
-        timer.fire()
+        runlop.add(timer, forMode: RunLoopMode.commonModes)
+//        timer.fire()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
